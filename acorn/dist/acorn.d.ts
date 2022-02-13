@@ -39,11 +39,14 @@ declare namespace acorn {
 
   class Parser {
     // state.js
+    context: TokContext[];
+    exprAllowed: boolean;
     lineStart: number;
     options: Options;
     curLine: number;
     start: number;
     end: number;
+    pos: number;
     input: string;
     type: TokenType;
 
