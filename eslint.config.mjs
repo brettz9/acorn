@@ -59,11 +59,12 @@ export default [
   {
     files: [
       "acorn/src/bin/*.js",
-      "bin/generate-identifier-regex.js",
-      "bin/generate-unicode-script-values.js"
+      "bin/generate-identifier-regex.mjs",
+      "bin/generate-unicode-script-values.mjs",
+      "bin/run_test262.mjs"
     ],
     languageOptions: {
-      ecmaVersion: 2022
+      ecmaVersion: 2025
     },
     rules: {
       "no-console": "off"
